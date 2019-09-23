@@ -18,9 +18,9 @@
         android:padding="8dp">
 
         <TextView
+            android:id="@+id/tv_history"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="1+1"
             android:textColor="#FFFFFF"
             android:textSize="15dp" />
 
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:gravity="right"
-            android:text="결과값"
+            android:text="0.0"
             android:textColor="#FFFFFF"
             android:textSize="30dp" />
 
@@ -54,13 +54,15 @@
             android:orientation="horizontal"
             android:weightSum="4">
             <Button
+                android:clickable="true"
+                android:onClick="clear"
                 android:gravity="center"
                 android:id="@+id/btn_clear"
                 android:text="C"
                 android:textSize="40dp"
                 android:textStyle="bold"
                 android:textColor="@color/colorWhite"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"/>
@@ -70,12 +72,13 @@
                 android:background="@color/colorWhite"/>
 
             <Button
+                android:onClick="remainder"
                 android:id="@+id/btn_remainderr"
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:text="%"
                 android:textColor="@color/colorWhite"
                 android:textStyle="bold"
@@ -86,12 +89,13 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorWhite"/>
             <Button
+                android:onClick="delete"
                 android:id="@+id/btn_del"
                 android:text="DEL"
                 android:gravity="center"
                 android:textSize="40dp"
                 android:textColor="@color/colorWhite"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:textStyle="bold"
@@ -101,12 +105,13 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorWhite"/>
             <Button
+                android:onClick="divide"
                 android:id="@+id/btn_division"
                 android:gravity="center"
                 android:text="÷"
                 android:textSize="40dp"
                 android:textColor="@color/colorWhite"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:textStyle="bold"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -124,12 +129,13 @@
             android:layout_weight="1"
             android:weightSum="4">
             <Button
+                android:onClick="number7"
                 android:id="@+id/btn_seven"
                 android:gravity="center"
                 android:text="7"
                 android:textSize="40dp"
                 android:textColor="@color/colorWhite"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"/>
@@ -138,26 +144,13 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorWhite"/>
             <Button
+                android:onClick="number8"
                 android:id="@+id/btn_eight"
                 android:text="8"
                 android:textSize="40dp"
                 android:gravity="center"
                 android:textColor="@color/colorWhite"
-                android:background="@android:color/transparent"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
-            <View
-                android:layout_width="1dp"
-                android:layout_height="match_parent"
-                android:background="@color/colorWhite"/>
-            <Button
-                android:id="@+id/btn_nine"
-                android:text="9"
-                android:gravity="center"
-                android:textSize="40dp"
-                android:textColor="@color/colorWhite"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"/>
@@ -167,6 +160,24 @@
                 android:background="@color/colorWhite"/>
 
             <Button
+                android:onClick="number9"
+                android:id="@+id/btn_nine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/colorWhite"
+                android:textSize="40dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"/>
+
+            <Button
+                android:onClick="multiply"
                 android:id="@+id/btn_multiply"
                 android:text="×"
                 android:textSize="40dp"
@@ -176,7 +187,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:textStyle="bold"
-                android:background="@android:color/transparent" />
+                android:background="?attr/selectableItemBackground" />
         </LinearLayout>
 
         <View
@@ -190,12 +201,13 @@
             android:layout_weight="1"
             android:weightSum="4">
             <Button
+                android:onClick="number4"
                 android:id="@+id/btn_four"
                 android:text="4"
                 android:textSize="40dp"
                 android:textColor="@color/colorWhite"
                 android:gravity="center"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"/>
@@ -204,12 +216,13 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorWhite"/>
             <Button
+                android:onClick="number5"
                 android:id="@+id/btn_five"
                 android:text="5"
                 android:textSize="40dp"
                 android:textColor="@color/colorWhite"
                 android:gravity="center"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"/>
@@ -218,11 +231,12 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorWhite"/>
             <Button
+                android:onClick="number6"
                 android:id="@+id/btn_six"
                 android:text="6"
                 android:textSize="40dp"
                 android:textColor="@color/colorWhite"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -232,12 +246,13 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorWhite"/>
             <Button
+                android:onClick="minus"
                 android:text="―"
                 android:id="@+id/btn_substract"
                 android:gravity="center"
                 android:textSize="40dp"
                 android:textColor="@color/colorWhite"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:textStyle="bold"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -255,12 +270,13 @@
             android:layout_weight="1"
             android:weightSum="4">
             <Button
+                android:onClick="number1"
                 android:id="@+id/btn_one"
                 android:text="1"
                 android:textSize="40dp"
                 android:textColor="@color/colorWhite"
                 android:gravity="center"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"/>
@@ -269,11 +285,12 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorWhite"/>
             <Button
+                android:onClick="number2"
                 android:id="@+id/btn_two"
                 android:text="2"
                 android:textSize="40dp"
                 android:textColor="@color/colorWhite"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:gravity="center"
                 android:layout_height="match_parent"
@@ -283,11 +300,12 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorWhite"/>
             <Button
+                android:onClick="number3"
                 android:id="@+id/btn_three"
                 android:text="3"
                 android:textSize="40dp"
                 android:textColor="@color/colorWhite"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -297,11 +315,12 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorWhite"/>
             <Button
+                android:onClick="plus"
                 android:id="@+id/btn_plus"
                 android:text="+"
                 android:textSize="40dp"
                 android:textColor="@color/colorWhite"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:textStyle="bold"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -320,10 +339,11 @@
             android:layout_weight="1"
             android:weightSum="4">
             <Button
+                android:onClick="number0"
                 android:text="0"
                 android:textSize="40dp"
                 android:textColor="@color/colorWhite"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:gravity="center"
                 android:layout_height="match_parent"
@@ -333,10 +353,11 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorWhite"/>
             <Button
+                android:onClick="point"
                 android:text="."
                 android:textSize="40dp"
                 android:textColor="@color/colorWhite"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -346,12 +367,13 @@
                 android:layout_height="match_parent"
                 android:background="@color/colorWhite"/>
             <Button
+                android:onClick="calculate"
                 android:id="@+id/btn_calculation"
                 android:textStyle="bold"
                 android:text="="
                 android:textSize="40dp"
                 android:textColor="@color/colorWhite"
-                android:background="@android:color/transparent"
+                android:background="?attr/selectableItemBackground"
                 android:gravity="center"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

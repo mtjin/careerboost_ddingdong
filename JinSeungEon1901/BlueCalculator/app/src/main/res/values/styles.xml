@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorSkyBlue</item>
         <item name="colorPrimaryDark">@color/colorSkyBlue</item>
         <item name="colorAccent">@color/colorSkyBlue</item>
+        <item name="android:colorControlHighlight">@color/colorSkyBlue2</item>
     </style>
 
 </resources>

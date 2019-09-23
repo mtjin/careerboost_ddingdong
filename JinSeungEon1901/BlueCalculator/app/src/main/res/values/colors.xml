@@ -5,6 +5,7 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorSkyBlue">#18c6ff</color>
+    <color name="colorSkyBlue2">#57C5FC</color>
     <color name="colorPurple">#3F51B5</color>
     <color name="colorSkyGray">#D7E1F1</color>
 </resources>
